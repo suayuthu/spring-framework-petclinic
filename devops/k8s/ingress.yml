@@ -6,7 +6,7 @@ metadata:
     app: {K8S_DEPLOYMENT}
 spec:
   rules:
-  - host: {K8S_DEPLOYMENT}.{INGRESS_URL}
+  - host: {K8S_DEPLOYMENT}.{NAMESPACE}.{INGRESS_URL}
     http:
       paths:
       - backend:
